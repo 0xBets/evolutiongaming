@@ -1,32 +1,732 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="A new way of making tournaments. Join the evolution of esports gaming." />
-        <meta name="author" content="" />
-		<meta property="og:image" content="https://evolutiongaming.gg/assets/img/evolution-gaming-meta-image.png">
-        <title>Evolution Gaming</title>
-		<meta property="keywords" content="games, challenges, tournament, e-sports, call of duty, warzone">
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
+  <title>Evolution Gaming</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="/">
+		<img src="img/eg-logo.png">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
+      Evolution Gaming
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#torneos">
+      Torneos
+    </a>
+  </li>
+  <!--<li class="nav-item">
+    <a class="nav-link" href="#numbers">
+      Marcas
+    </a>
+  </li>-->
+  <li class="nav-item">
+    <a class="nav-link" href="#aboutus">
+      Quienes somos
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contacto">
+      Contacto
+    </a>
+  </li>
+  <!--<li class="nav-item">
+    <a class="nav-link" href="#testimonials">
+      Contacto
+    </a>
+  </li>-->
+
+    </ul>
+      <!--<a href="https://templatedeck.com/stride-html-template.html" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a>-->
+
+    </div>
+</div>
+</nav>
+
+    <main>
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+  
+<div class="container position-relative">
+  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/webp/interior11.webp);">
+    
+  </div>
+    <div class="row">
+
+<div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+  <h1 class="display-1 fw-bold mt-5">Juega, diviértete y evoluciona.</h1>
+  <p class="lead">Apoyamos a los jugadores amateur a mejorar su competitividad para convertirse en un pro-gamer.</p>
+  <a href="https://docs.google.com/forms/d/18T6iGpn4qDhwIyUXIBaffAcTZN2fAQjNFAuGP2D_PZU" target="_blank" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Empieza ya!</a>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
 		
-        <link href="css/styles.css" rel="stylesheet" />
 		
-    </head>
+		
+		<!-- ======= Clients Section ======= -->
+	<section id="clients" class="clients">
+    	<div class="container" data-aos="zoom-in">
+
+        	<div class="row">
+			  	<div class="col-lg-2 col-md-2 align-items-center">
+					<img src="img/legueoflegends.png" class="img-fluid" alt="">
+			  	</div>			
+				<div class="col-lg-2 col-md-2 align-items-center ">
+            		<img src="img/valorant.png" class="img-fluid" alt="">
+          		</div>				
+				<div class="col-lg-2 col-md-2 align-items-center">
+					<img src="img/csgo-logo.png" class="img-fluid" alt="">
+			  	</div>
+          		<div class="col-lg-2 col-md-2 align-items-center ">
+            		<img src="img/pubg-logo.png" class="img-fluid" alt="">
+          		</div>
+				<div class="col-lg-2 col-md-2 align-items-center ">
+            		<img src="img/fifa.png" class="img-fluid" alt="">
+          		</div>
+				<div class="col-lg-2 col-md-2 align-items-center ">
+            		<img src="img/Rocket_League_logo.png" class="img-fluid" alt="">
+          		</div>	
+        	</div>
+
+      	</div>
+    </section><!-- End Clients Section -->	
+		
+		
+		
+		
+		
+		
+		
+	<div class="py-vh-4 bs-body-bg w-100 overflow-hidden" id="services">
+  <div class="container">
+      
+<div class="row d-flex justify-content-between">
+  <div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      </div>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/webp/interior42.webp);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-5">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-left">¿Por qué EVOLUTION GAMING?<br></h3>
+  <p data-aos="fade-left" data-aos-delay="200">
+	<ul class="b">
+		  <li><span>Muchos jugadores desean medir sus habilidades pero no encuentran competencias niveladas. Evolution Gaming tiene como objetivo realizar torneos, copas o ligas con diferentes niveles amateurs,  nuestra intención es que  se diviertan y puedan darse cuenta de sus posibilidades para ser un jugador PRO.</span></li><br>
+		  <li><span>Evolucionar tu  juego te brinda la oportunidad de enfrentar desafíos más difíciles,  poner a prueba tus habilidades, tu inteligencia emocional, superarte a ti mismo y hasta poder ser parte de un equipo eSports Profesional.</span></li><br>
+		  <li><span>No se trata de demostrar si eres el mejor del mundo, queremos que sepas hasta dónde quieres y puedes llegar?</span></li>
+	  </ul>
+  </p>
+  <p>
+    <!--<a href="#" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Learn more
+    </a>-->
+  </p>
+</div>
+</div>
+
+  </div>
+</div>	  	
+		
+		
+		
 	
+	  
+	  
+	  
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+		
 	
-    <body>
-  		<div class="container-fluid splash" id="splash">
-		  <div class="container">
-			<img src="assets/img/evolution-gaming-logo1.png" alt="" class="profile-image">
-			<h1>Próximamente</h1>   
-		  </div>
+	  
+	  
+<div class="small py-vh-3 w-100 overflow-hidden" style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-sunglasses" viewBox="0 0 16 16">
+  <path d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A1.99 1.99 0 0 0 8 6a1.99 1.99 0 0 0-1.112.338A2 2 0 0 0 5 5H3zm0 1h.941c.264 0 .348.356.112.474l-.457.228a2 2 0 0 0-.894.894l-.228.457C2.356 8.289 2 8.205 2 7.94V7a1 1 0 0 1 1-1z"/>
+</svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Descubrimiento</h3>
+      <p>Tienes que vivir esta experiencia.</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-rocket" viewBox="0 0 16 16">
+  <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8Z"/>
+  <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.495 3.495 0 0 0-.463-.315A2.19 2.19 0 0 0 8.25.064.546.546 0 0 0 8 0a.549.549 0 0 0-.266.073 2.312 2.312 0 0 0-.142.08 3.67 3.67 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635.85 0 1.7-.207 2.4-.635.067.03.132.056.196.083.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562l-1.499-1.83ZM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935L12 10.445ZM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199ZM8.009 1.073c.063.04.14.094.226.163.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13c-.781 0-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32.09-.076.17-.135.236-.18Z"/>
+  <path d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"/>
+</svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Superación</h3>
+      <p>Te apoyamos a mejorar tu competitividad.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+  <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+  <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+</svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Profesión</h3>
+      <p>Una vez que tengas tus habilidades tendrás que competir a otro Nivel.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+<div class="py-vh-6 text-light w-100 overflow-hidden" id="torneos">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center text-center">
+  <div class="col-lg-8 text-center" data-aos="fade">
+	  <h3 class="" data-aos="fade-left">Torneos</h3>
+        <p class="lead">Además de la gloria y el reconocimiento, queremos recompensarte con premios USDT o productos exclusivos y reconocimientos especiales, hay mucho en juego. <br>¡Sé valiente, persevera y lucha hasta el final!</p>
+  </div>
+		 <p class="lead"> <span class="modalidades h5">Modalidades: </span><br>Copa del Mundo<br>Eliminación de bracket simple<br>Leaderboard</p>
+  
+	   <div class="imgbg" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/danny-howe-bn-D2bCvpik-unsplash.png" class="img-fluid" width="100%" height="">
+        </div>
+		  
+		  
+</div>
+
+    </div>
+  </div>
+</div> 
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		
+		
+
+<div class="py-vh-5 w-100 overflow-hidden" id="aboutus">
+	<div class="container">
+    	<!--<div class="row d-flex justify-content-end">
+			<div class="col-lg-8" data-aos="fade-down">
+				<h2 class="display-6">Nos encargamos de conectar a las marcas con creadores de contenidos que logren el objetivo esperado por las marcas, queremos los mejores resultados en cada patrocinio.</h2>
+			</div>
+		</div>-->
+		
+	
+		<div class="row d-flex align-items-center">
+	
+		<div class="container py-vh-4 w-100 overflow-hidden blast-section">
+	  		<div class="row d-flex justify-content-center align-items-center">
+				<div class="col-lg-6 blast-img">
+	  				<img src="img/blast.png" width="664" height="64" class="img-fluid" alt="" data-aos="fade">
+				</div>
+				<div class="col-md-6" data-aos="fade-left">
+				  <div>
+					<div class="fs-4 my-3 fw-light pt-4 pb-3">
+						<h1 class="blast">¿Quiénes somos?</h1>
+						<p class="lead">Somos empresas aliadas para crear un producto de confianza para los jugadores y las marcas que participen. Queremos aportar a la evolución de la industria gaming.<br></p>
+					
+					<div style="display: flex">
+						<div class=" col-lg-4 col-md-2 " style="margin-top: 20px; margin-right: 30px;">
+							<a href="https://app.blast.gg/#/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+								<img src="img/logo-blast.png" class="img-fluid" alt="blast logo">								
+							</a>
+						</div>
+						<div class=" col-lg-4 col-md-2" style="margin-top: 20px;">
+							<a href="https://sponsorconnections.com/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+								<img src="img/sponsorconnections-logo.png" class="img-fluid" alt="sponsorconnections logo">
+							</a>
+						</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+	  		</div>
 		</div>
-    </body>
 	
-		
+			
+			
+	
+	<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+	  <span class="h5 fw-lighter">01. Plataforma de torneos</span>
+	  <h3 class="py-5 border-top border-dark">La administración del campeonato se hará a través de nuestra plataforma de Competitive Gaming “Blast.gg”.</h3>
+	  <p>Esta proveerá todo el back-end para la operación de cada torneo online, permitiendo:<br>
+		  <ul class="b">
+			  <li><span>Registros</span></li>
+			  <li><span>Interacción entre jugadores</span></li>
+			  <li><span>Conformación de equipos</span></li>
+		  </ul>
+	  </p>
+			
+			<div class=" col-lg-5 col-md-2 " style="margin-top: 20px; margin-right: 20px;">
+			<a href="https://app.blast.gg/#/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+				<img src="img/logo-blast.png" class="img-fluid" alt="blast logo">								
+			</a>
+		</div>
+	  <!--<a href="#" class="link-fancy">Learn more
+	  </a>-->
+	</div>
+
+<div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400">
+  <span class="h5 fw-lighter">02. Plataforma de patrocinios</span>
+  <h3 class="py-5 border-top border-dark">Nos encargamos de conectar a las marcas con creadores de contenidos que logren el objetivo esperado por las marcas.
+</h3>
+  <p>Queremos los mejores resultados en cada patrocinio. Porque un buen patrocinio, hace crecer la industria.</p>
+  <!--<a href="#" class="link-fancy">Learn more
+  </a>-->
+	<div class=" col-lg-5 col-md-2" style="margin-top: 20px;">
+		<a href="https://sponsorconnections.com/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+			<img src="img/sponsorconnections-logo.png" class="img-fluid" alt="sponsorconnections logo">
+		</a>
+	</div>
+</div>
+
+<div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600">
+  <span class="h5 fw-lighter">03. Full experience</span>
+  <h3 class="py-5 border-top border-dark">Ofrecemos una experiencia en torneos, cursos, tutoriales, videos y otras herramientas de aprendizaje para ayudar a los jugadores a mejorar sus habilidades y conocimientos sobre diferentes juegos.</h3>
+  <p>Las marcas necesitan una conexión con este público para saber ¿qué quieren? ¿cómo lo quieren? ¿cuando lo quieren? para que la marca esté preparada justo en ese momento único que necesitan comprar.
+</p>
+  <!--<a href="#" class="link-fancy">Learn more
+  </a>-->
+	<div style="display: flex">
+		<div class=" col-lg-3 col-md-2 " style="margin-top: 20px; margin-right: 20px;">
+			<a href="https://app.blast.gg/#/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+				<img src="img/logo-blast.png" class="img-fluid" alt="blast logo">								
+			</a>
+		</div>
+		<div class=" col-lg-3 col-md-2" style="margin-top: 20px; margin-right: 20px;">
+			<a href="https://sponsorconnections.com/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+				<img src="img/sponsorconnections-logo.png" class="img-fluid" alt="sponsorconnections logo">
+			</a>
+		</div>
+		<div class=" col-lg-3 col-md-2" style="margin-top: 20px;">
+			<a href="https://evolutiongaming.gg/" target="_blank" class="" data-aos="fade-left" data-aos-delay="200">
+				<img src="img/eg-logo.png" class="img-fluid" alt="evolution gaming logo">
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+
+  </div>
+</div>
+	    
+	  
+	 
+	  
+	  
+	
+	  
+	  
+	 
+	  
+
+
+
+
+
+<!--<div class="position-relative overflow-hidden w-100 bg-light" id="gallery">
+  <div class="container-fluid">
+  <div class="row overflow-scroll">
+    <div class="col-12">
+      <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
+        <div class="col-md-2" data-aos="fade-up">
+            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
+            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+
+</div>-->
+
+<!--<div class="container py-vh-4 w-100 overflow-hidden">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-5">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-right">Lorem ipsum dolor sit amet</h3>
+</div>
+<div class="col-md-7" data-aos="fade-left">
+  <blockquote>
+    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
+    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+    <span><span class="fw-bold">Nombre,</span>
+      Rol.</span>
+  </blockquote>
+</div>
+
+  </div>
+</div>-->
+
+<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="contacto">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center text-center">
+  <div class="col-lg-8 text-center" data-aos="fade">
+	  <!--<h3 class="" data-aos="fade-left">Contacto</h3>-->
+        <p class="text-secondary lead">¡Descubre tu próxima fase como gamer! <br>Experimenta la adrenalina de competir.</p>
+    <h2 class="display-6 mb-5" style="font-size: 1.5em;">Ya seas un novato en busca de emociones o un jugador experimentado en busca de nuevos desafíos, Evolution Gaming te ofrece la experiencia de competir. <br>¡Únete a nosotros y descubre tu evolución!
+</h2>
+  </div>
+  <div class="col-12">
+    <a href="https://docs.google.com/forms/d/1ZO87Ao_I4NbAM6Q33_nl0YOnLKSiIIwWyKRSSyLRWhg" target="_blank" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Newsletter</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!--<div class="bg-dark w-100 overflow-hidden" id="testimonials">
+ 	<div class="container py-vh-6">
+    	<div class="row d-flex justify-content-center">
+      		<div class="col-12 col-lg-10 col-xl-8 text-center">
+  				<h2 class="display-6">Lorem ipsum dolor</h2>
+  				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			
+			<div class="col-12 mt-4">
+  				<div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+   					
+					<div class="col-12 col-lg-6 col-xl-4">
+      					<div class="card p-4 mt-3 border-0" data-aos="fade-right">
+       						 <div class="card-body">
+          					 	<div class="text-dark py-2 fs-3">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+									
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+									
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+									
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"><path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/></svg>
+
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+								 </div>
+          
+								 <blockquote class="blockquote">
+            					 	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua."</p>
+          						 </blockquote>
+          						 <div class="d-flex justify-content-between border-top pt-3">
+            					 	<p class="card-text">
+              	 						<span class="h6 fw-5">Nombre Apellido</span><br><small class="text-muted">Rol</small>
+									 </p>
+            						 <img src="img/webp/person14.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          						 </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-6 col-xl-4">
+					  <div class="card p-4 mt-3 border-0" data-aos="fade-up">
+						<div class="card-body">
+						  <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+				  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+				  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+				  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+				  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+				</svg>
+				</div>
+						  <blockquote class="blockquote">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consectetur elit."</p>
+						  </blockquote>
+						  <div class="d-flex justify-content-between border-top pt-3">
+							<p class="card-text">
+							  <span class="h6 fw-5">Nombre Apellido</span><br>
+							  <small class="text-muted">Rol</small>
+							</p>
+							<img src="img/webp/person13.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-left">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+</div>
+          <blockquote class="blockquote">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et dolore magna aliqua."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Nombre</span><br>
+              <small class="text-muted">Rol</small>
+            </p>
+            <img src="img/webp/person18.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>-->
+
+
+
+<!--<div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-lg-8 text-center">
+      <h3 class="fs-2 fw-light">¡Entérate de los próximos torneos y novedades!</h3></div>
+    <div class="col-12 col-lg-8 text-center">
+      <div class="row">
+        <div class="grouped-inputs border bg-dark p-2">
+  <div class="row">
+    <div class="col">
+      <form class="form-floating">
+        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </form>
+    </div>
+    <div class="col-auto">
+      <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>-->
+
+    </main>
+
+    <footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+</svg>
+  <address class="text-secondary mt-3">
+    <strong>Evolution Gaming</strong><br>
+    <br>
+  </address>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Menu</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#services" aria-label="Brings you to the frontpage">Evolution Gaming</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#torneos" aria-label="Brings you to the frontpage">Torneos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#aboutus" aria-label="Brings you to the frontpage">Quienes somos</a>
+    </li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Contacto</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page">juan@blast.gg</a>
+		<a class="nav-link link-secondary ps-0" aria-current="page">fabian@sponsorconnections.com</a>
+    </li>
+    
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 p-5">
+  <h3 class="h6 mb-3"><img src="img/eg-logo.png" class="img-fluid" alt="evolution gaming logo"></h3>
+  <ul class="nav flex-column">
+    <!--<li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
+    </li>-->
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="container text-center py-3 small"><p>Evolution Gaming</p></div>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
 </html>
